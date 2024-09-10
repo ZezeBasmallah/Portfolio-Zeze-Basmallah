@@ -1,0 +1,9 @@
+li a:hover {
+    border-bottom: 2px white solid;
+    padding: 5px;
+    transition: 0.1s;
+  }
+.jumbotron {
+    padding: 2rem 1rem;
+    background-color: #e2edff;
+}
