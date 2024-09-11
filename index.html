@@ -1,127 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <title>My Portfolio | Zeze Basmallah</title>
-    <!-- My Css -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="#">Zeze Basmallah</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Me</a>
-            </li>
-          </ul>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>My Portfolio | Zeze Basmallah</title>
+  <!-- My Css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="home">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Zeze Basmallah</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactme">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <!-- jumbotron -->
+  <section class="jumbotron text-center">
+    <img src="img/1.jpg" alt="zeze" width="200" height="200" class="img-thumbnail" />
+    <h1 class="display-4">Zeze Basmallah</h1>
+    <p class="lead">Student | Freelancer</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,320L48,282.7C96,245,192,171,288,160C384,149,480,203,576,218.7C672,235,768,213,864,186.7C960,160,1056,128,1152,128C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- jumbotron end -->
+  <!-- about -->
+  <section id="about">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col">
+          <h2>About Me</h2>
         </div>
       </div>
-    </nav>
-    <!-- navbar end -->
-    <!-- jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/1.jpg" alt="zeze" width="200" height="200" class="img-thumbnail" />
-      <h1 class="display-4">Zeze Basmallah</h1>
-      <p class="lead">Student | Freelancer</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,320L48,282.7C96,245,192,171,288,160C384,149,480,203,576,218.7C672,235,768,213,864,186.7C960,160,1056,128,1152,128C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- jumbotron end -->
-    <!-- about -->
-    <section>
-      <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
+      <div class="row justify-content-evenly fs-5 text-center">
+        <div class="col-md-4 mb-5">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil temporibus commodi quos! Culpa
+            commodi pariatur deleniti aliquid voluptas quis.</p>
         </div>
-        <div class="row justify-content-evenly fs-5 text-center">
-          <div class="col-md-4 mb-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nihil temporibus commodi quos! Culpa commodi pariatur deleniti aliquid voluptas quis.</p>
-          </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolor iste obcaecati sit, eveniet, quas temporibus expedita repudiandae at aliquid, illum perspiciatis est quo ad.</p>
-          </div>
+        <div class="col-md-4">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolor iste obcaecati sit, eveniet, quas
+            temporibus expedita repudiandae at aliquid, illum perspiciatis est quo ad.</p>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,160L60,181.3C120,203,240,245,360,256C480,267,600,245,720,197.3C840,149,960,75,1080,69.3C1200,64,1320,128,1380,160L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir about -->
-    <!-- projects -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col mb-4">
-            <h2>My Projects</h2>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#e2edff" fill-opacity="1"
+        d="M0,160L60,181.3C120,203,240,245,360,256C480,267,600,245,720,197.3C840,149,960,75,1080,69.3C1200,64,1320,128,1380,160L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- akhir about -->
+  <!-- projects -->
+  <section id="project">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col mb-4">
+          <h2>My Projects</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/2.png" class="card-img-top img-thumbnail" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Project Game</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="https://zezebasmallah.github.io/Simple-Game-Koje-X-ChatGPT/"
+                  class="btn btn-primary">Kunjungi</a>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="img/2.png" class="card-img-top img-thumbnail" alt="Project 2">
-                <div class="card-body">
-                  <h5 class="card-title">Project Game</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="https://zezebasmallah.github.io/Simple-Game-Koje-X-ChatGPT/" class="btn btn-primary">Kunjungi</a>
-                </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/3.png" class="card-img-top img-thumbnail" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">Project Website</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="https://zezebasmallah.github.io/E-Commerce-V1/" class="btn btn-primary">Kunjungi</a>
               </div>
-              </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="img/3.png" class="card-img-top img-thumbnail" alt="Project 3">
-                <div class="card-body">
-                  <h5 class="card-title">Project Website</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="https://zezebasmallah.github.io/E-Commerce-V1/" class="btn btn-primary">Kunjungi</a>
-                </div>
-              </div>
-              </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <img src="img/4.png" class="card-img-top img-thumbnail" alt="Project 4">
-                <div class="card-body">
-                  <h5 class="card-title">Project Gallery</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="https://zezebasmallah.github.io/TheFinalGalleryKoje/" class="btn btn-primary">Kunjungi</a>
-                </div>
-              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/4.png" class="card-img-top img-thumbnail" alt="Project 4">
+              <div class="card-body">
+                <h5 class="card-title">Project Gallery</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="https://zezebasmallah.github.io/TheFinalGalleryKoje/" class="btn btn-primary">Kunjungi</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- akhir projects -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,192L60,197.3C120,203,240,213,360,186.7C480,160,600,96,720,85.3C840,75,960,117,1080,154.7C1200,192,1320,224,1380,240L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- akhir projects -->
+  <!-- contact me -->
+  <section id="contactme">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12 mb-4">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="row text-start justify-content-center">
+          <div class="col-md-6">
+            <form></form>
+            <div class="mb-3 ">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input type="name" class="form-control" id="name" aria-describedby="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#0d6dfd" fill-opacity="1"
+        d="M0,224L48,208C96,192,192,160,288,160C384,160,480,192,576,181.3C672,171,768,117,864,128C960,139,1056,213,1152,240C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- footer -->
+  <footer class="bg-primary text-white text-center pb-5">
+    <p>Created With <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-heart-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+      </svg> By <a href="https://www.instagram.com/zezebsmllh/" target="_blank" class="text-white fw-bold">Zeze
+        Basmallah</a></p>
+  </footer>
+  <!-- akhir footer -->
+
+  <!-- akhir contact me -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
