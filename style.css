@@ -16,6 +16,6 @@ li a:hover {
 section {
   padding-top: 5rem;
 }
-.card {
-  
+.card img:hover {
+   transform: scale(1.5);
 }
