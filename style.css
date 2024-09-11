@@ -17,5 +17,6 @@ section {
   padding-top: 5rem;
 }
 .card img:hover {
-   transform: scale(1.5);
+  transition: .3s ease-out;
+   transform: scale(1.125);
 }
