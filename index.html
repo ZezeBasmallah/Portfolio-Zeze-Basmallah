@@ -137,6 +137,69 @@
     </svg>
   </section>
   <!-- akhir projects -->
+  <!-- gallery -->
+  <section id="gallery">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Gallery</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img 2/5.jpg" alt="gambar" class="image-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img 2/7.jpg" alt="gambar" class="image-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img 2/3.jpg" alt="gambar" class="image-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img 2/4.jpg" alt="gambar" class="image-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img 2/5.jpg" alt="gambar" class="image-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img 2/6.jpg" alt="gambar" class="image-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img 2/7.jpg" alt="gambar" class="image-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img 2/8.jpg" alt="gambar" class="image-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img 2/3.jpg" alt="gambar" class="image-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="img 2/10.jpg" alt="gambar" class="image-fluid gallery-img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- akhir gallery -->
   <!-- contact me -->
   <section id="contactme">
     <div class="container">
@@ -194,9 +257,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <!-- javascript GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <!-- Javasript AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+    const galleryImage = document.querySelectorAll('.gallery-img');
+
+    galleryImage.forEach((img, i) => {
+      img.dataset.aos = 'fade-down';
+      img.dataset.aosDelay = i * 100;
+      img.dataset.aosDuration = 1000;
+    });
+
     AOS.init({
       once: true,
     });
