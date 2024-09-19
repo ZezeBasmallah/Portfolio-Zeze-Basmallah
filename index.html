@@ -46,8 +46,8 @@
   <!-- jumbotron -->
   <section class="jumbotron text-center">
     <img src="img/1.jpg" alt="zeze" width="200" height="200" class="img-thumbnail" />
-    <h1 class="display-4" data-aos="fade-left">Zeze Basmallah</h1>
-    <p class="lead">Student | IT Support</p>
+    <h1 class="display-4">Zeze Basmallah</h1>
+    <p class="lead"></p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#fff" fill-opacity="1"
         d="M0,320L48,282.7C96,245,192,171,288,160C384,149,480,203,576,218.7C672,235,768,213,864,186.7C960,160,1056,128,1152,128C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -258,6 +258,14 @@
     crossorigin="anonymous"></script>
   <!-- javascript GSAP -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+  <script>
+    gsap.registerPlugin(TextPlugin);
+    gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Student | IT Support' });
+    gsap.from('.jumbotron img', { duration: 3, opacity: 0, ease: "power4.out" });
+    gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: "bounce.out" })
+    gsap.from('.display-4', { duration: 1.5, x: -50, opacity: 0, delay: 0.5, ease: "back" })
+  </script>
   <!-- Javasript AOS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
