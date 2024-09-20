@@ -200,8 +200,45 @@
         </div>
       </div>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#e2edff" fill-opacity="1"
+        d="M0,64L34.3,96C68.6,128,137,192,206,224C274.3,256,343,256,411,245.3C480,235,549,213,617,176C685.7,139,754,85,823,53.3C891.4,21,960,11,1029,26.7C1097.1,43,1166,85,1234,101.3C1302.9,117,1371,107,1406,101.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+      </path>
+    </svg>
   </section>
   <!-- akhir gallery -->
+  <!-- My peripheral -->
+  <section id="my-keyboards">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>My Peripheral</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="keyboard-box">
+            <h4 class="keyboard-name">Ajazz AK820</h4>
+            <img src="keyboard/1.png" alt="" class="keyboard-img">
+            <a href="#" class="btn-light keyboard-detail-button">Show Details</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="keyboard-box">
+            <h4 class="keyboard-name">Vortex Series Oni R1</h4>
+            <img src="keyboard/2.png" alt="Ajazz AK820 Black" class="keyboard-img">
+            <a href="#" class="btn-light keyboard-detail-button">Show Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,64L34.3,96C68.6,128,137,192,206,197.3C274.3,203,343,149,411,112C480,75,549,53,617,69.3C685.7,85,754,139,823,160C891.4,181,960,171,1029,160C1097.1,149,1166,139,1234,144C1302.9,149,1371,171,1406,181.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- akhir Peripheral -->
   <!-- contact me -->
   <section id="contactme">
     <div class="container">
@@ -311,6 +348,14 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+      max: 20,
+      speed: 300,
+      glare: true,
+    });
   </script>
 </body>
 
